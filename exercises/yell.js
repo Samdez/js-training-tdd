@@ -7,7 +7,11 @@
  */
 
 // Your code:
-const yell = (str) => str.split('').map(letter => letter.toUpperCase()).join('')
+const yell = (str) =>
+  str
+    .split('')
+    .map(letter => letter.toUpperCase())
+    .join('')
 
 //* Begin of tests
 const assert = require('assert');
