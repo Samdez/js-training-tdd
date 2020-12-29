@@ -9,7 +9,19 @@
  */
 
 // Your code:
-
+const multiply = (a, b) => {
+  let result = 0
+  if (a < 0 && b < 0){
+    a = Math.abs(a)
+    b = Math.abs(b)
+  } 
+  let max = Math.max(a, b)
+  let min = Math.min(a, b)
+  for (let i = 0; i < max; i++){
+    result += min
+  }
+  return result
+}
 //* Begin of tests
 const assert = require('assert');
 
